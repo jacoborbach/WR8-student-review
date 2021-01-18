@@ -22,8 +22,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header user={this.state.user} updateUser={this.updateUser} />
-        <h1> Hello World!</h1>
-        {/* <Container /> */}
+        <Container />
       </div>
     );
   }

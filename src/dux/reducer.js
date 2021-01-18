@@ -8,7 +8,7 @@ const initalState = {
 const GET_WILD_POKEMON = 'GET_WILD_POKEMON';
 
 export function getWildPokemon() {
-    const rand = Math.ceil(Math.rand() * 151);
+    const rand = Math.ceil(Math.random() * 151);
     const data = axios.get(`https://pokeapi.co/api/v2/pokemon/${rand}`)
         .then(res => res.data)
     return {
