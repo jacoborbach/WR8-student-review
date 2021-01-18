@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux';
+import { getWildPokemon } from '../../dux/reducer';
 
 export class Container extends Component {
     render() {
